@@ -1,14 +1,3 @@
-react-nav-bar-tutorial/
-├── src/
-│ ├── components/
-│ │ └── Navbar.tsx
-│ ├── styles/
-│ │ └── Navbar.css
-│ └── App.tsx
-├── public/
-├── package.json
-└── README.md
-
 # React Responsive Navbar Tutorial
 
 This is a React project demonstrating a fully responsive navigation bar with intuitive mobile interactions, accessibility considerations, and clean, maintainable CSS.
