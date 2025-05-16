@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Translator from './pages/Translator'
 import './styles/Navbar.css';
+import { useDispatch } from 'react-redux';
+import { fetchLanguages } from './utils/LanguageSlice';
+import { AppDispatch } from './store';
 
 function Page({ color }: { color: string }) {
   return (
@@ -18,6 +21,12 @@ function Page({ color }: { color: string }) {
 }
 
 function App() {
+  const dispatch = useDispatch<AppDispatch>();
+
+  useEffect(() => {
+    dispatch(fetchLanguages());
+  }, []);
+  
   return (
     <Router>
       <Navbar />
