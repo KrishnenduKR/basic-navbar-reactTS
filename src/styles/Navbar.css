@@ -23,7 +23,7 @@
 
 /* Navbar container */
 .navbar {
-  background-color: rgba(245, 243, 242, 0.85);
+  background-color: #7B6F9A;
   color: var(--text-color);
   height: var(--navbar-height);
   width: 100%;

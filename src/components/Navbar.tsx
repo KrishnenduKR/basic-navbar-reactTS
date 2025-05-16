@@ -33,7 +33,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <ul className="navbar-menu">
-          <li><Link to="/">Page 1</Link></li>
+          <li><Link to="/">Translator</Link></li>
           <li><Link to="/page2">Page 2</Link></li>
           <li><Link to="/page3">Page 3</Link></li>
           <li><Link to="/page4">Page 4</Link></li>
@@ -42,12 +42,12 @@ function Navbar() {
 
         <div className="navbar-action">
           <a
-            href="https://jamesbuckhouse.substack.com/"
+            href=""
             className="navbar-newsletter"
             target="_blank"
             rel="noopener noreferrer"
           >
-            📰 Newsletter
+            📰 SampleApp
           </a>
         </div>
 
@@ -58,19 +58,19 @@ function Navbar() {
         </div>
 
         <ul className={`navbar-mobile-menu ${isOpen ? 'active' : ''}`} ref={menuRef}>
-        <li><Link to="/" onClick={closeMenu}>Page 1</Link></li>
+        <li><Link to="/" onClick={closeMenu}>Translator</Link></li>
   <li><Link to="/page2" onClick={closeMenu}>Page 2</Link></li>
   <li><Link to="/page3" onClick={closeMenu}>Page 3</Link></li>
   <li><Link to="/page4" onClick={closeMenu}>Page 4</Link></li>
   <li><Link to="/page5" onClick={closeMenu}>Page 5</Link></li>
           <li>
             <a 
-              href="https://jamesbuckhouse.substack.com/"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
               onClick={closeMenu}
             >
-              📰 Newsletter
+              📰 SampleApp
             </a>
           </li>
         </ul>

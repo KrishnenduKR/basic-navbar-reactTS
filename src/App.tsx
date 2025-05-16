@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Translator from './pages/Translator'
 import './styles/Navbar.css';
 
 function Page({ color }: { color: string }) {
@@ -21,7 +22,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Page color="#4281A4" />} />
+        <Route path="/" element={<Translator backgroundColor='#EFEAFA'/>} />
         <Route path="/page2" element={<Page color="#48A9A6" />} />
         <Route path="/page3" element={<Page color="#E4DFDA" />} />
         <Route path="/page4" element={<Page color="#D4B483" />} />
